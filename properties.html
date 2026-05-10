@@ -1,1 +1,377 @@
-**Properties**,[properties.html](sandbox:///mnt/agents/output/gaia_jan_long_multi_page/properties.html) 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Listings | Gaia-Jan Long Properties, Inc.</title>
+<meta name="description" content="Browse transient (Airbnb-style) and long-term rental properties managed by Gaia-Jan Long Properties. Fully vetted, compliant, and ready for occupancy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<base target="_blank">
+</head><body>
+<div class="trust-bar">
+<div class="container">
+<div class="trust-bar-content">
+<div class="trust-item">📍 <strong>HQ:</strong> 1206 Trade & Finance Tower, BGC, Taguig 1634, Philippines</div>
+<div class="trust-item">⚖️ <strong>SEC:</strong> ₱100M Authorized Capital Stock</div>
+<div class="trust-item">🌏 <strong>Global:</strong> Ray White Realty (AU, NZ, UK)</div>
+<div class="trust-item">🏛️ <strong>Structure:</strong> SPV of ClaMor Leisure Group – Golden Dragon Group JV</div>
+</div>
+</div>
+</div>
+<nav id="navbar">
+<div class="nav-container">
+<a href="index.html" class="logo">
+<div class="logo-mark">G</div>
+<div class="logo-text">Gaia-Jan Long Properties<span>An SPV of ClaMor–Golden Dragon JV</span></div>
+</a>
+<ul class="nav-links">
+<li><a href="about.html" class="">About</a></li>
+<li><a href="services.html" class="">Services</a></li>
+<li><a href="properties.html" class="active">Listings</a></li>
+<li><a href="blog.html" class="">Insights</a></li>
+<li><a href="contact.html" class="">Contact</a></li>
+<li><a href="contact.html" class="nav-cta">Partner With Us</a></li>
+</ul>
+<button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+</div>
+</nav>
+
+<section class="page-header">
+<div class="container">
+<div class="breadcrumbs"><a href="index.html">Home</a> <span>/</span> Listings</div>
+<h1>Property <em>Listings</em></h1>
+<p>Transient stays and long-term leases — fully managed, compliant, and vetted by our team.</p>
+</div>
+</section>
+
+<section class="listings-section">
+<div class="container">
+<div class="section-header">
+<span class="section-label">Available Properties</span>
+<h2>Managed by Gaia-Jan Long</h2>
+<p>Every listing is professionally managed with full legal compliance, transparent pricing, and institutional-grade service.</p>
+</div>
+
+<div class="listings-tabs">
+<button class="tab-btn active" onclick="filterListings('all')">All Properties</button>
+<button class="tab-btn" onclick="filterListings('transient')">Transient / Short-Term</button>
+<button class="tab-btn" onclick="filterListings('longterm')">Long-Term Leases</button>
+</div>
+
+<div class="listings-grid" id="listingsGrid">
+
+<!-- TRANSIENT LISTINGS -->
+<div class="listing-card" data-type="transient">
+<div class="listing-img">
+<span>BGC Luxury Studio</span>
+<span class="badge transient">Transient</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱4,500 <span>/ night</span></div>
+<h3 class="listing-title">Luxury Studio in Bonifacio Global City</h3>
+<div class="listing-meta">
+<span>👤 2 Guests</span>
+<span>🛏️ Studio</span>
+<span>📐 32 sqm</span>
+</div>
+<div class="listing-features">
+<span>WiFi</span><span>Pool</span><span>Gym</span><span>Netflix</span><span>Smart Lock</span><span>Housekeeping</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Fully furnished designer studio in the heart of BGC. Walking distance to High Street, Uptown Mall, and corporate offices. 24/7 concierge.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="transient">
+<div class="listing-img">
+<span>Makati CBD 1BR</span>
+<span class="badge transient">Transient</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱6,200 <span>/ night</span></div>
+<h3 class="listing-title">Executive 1-Bedroom in Makati CBD</h3>
+<div class="listing-meta">
+<span>👤 3 Guests</span>
+<span>🛏️ 1 BR</span>
+<span>📐 48 sqm</span>
+</div>
+<div class="listing-features">
+<span>WiFi</span><span>Pool</span><span>Gym</span><span>City View</span><span>Parking</span><span>Workspace</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Premium 1-bedroom unit in Rockwell Center. Ideal for business travelers and expats. Includes weekly linen change and dedicated property manager.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="transient">
+<div class="listing-img">
+<span>Tagaytay Villa</span>
+<span class="badge transient">Transient</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱12,000 <span>/ night</span></div>
+<h3 class="listing-title">Private Villa in Tagaytay Highlands</h3>
+<div class="listing-meta">
+<span>👤 8 Guests</span>
+<span>🛏️ 3 BR</span>
+<span>📐 180 sqm</span>
+</div>
+<div class="listing-features">
+<span>WiFi</span><span>Pool</span><span>BBQ</span><span>Fire Pit</span><span>Garden</span><span>Pet Friendly</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Stunning private villa with Taal Lake views. Perfect for family gatherings and weekend retreats. Fully equipped kitchen and entertainment area.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="transient">
+<div class="listing-img">
+<span>Boracay Beachfront</span>
+<span class="badge transient">Transient</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱8,500 <span>/ night</span></div>
+<h3 class="listing-title">Beachfront Suite in Boracay Station 1</h3>
+<div class="listing-meta">
+<span>👤 4 Guests</span>
+<span>🛏️ 1 BR Suite</span>
+<span>📐 55 sqm</span>
+</div>
+<div class="listing-features">
+<span>Beach Access</span><span>WiFi</span><span>Pool</span><span>Spa</span><span>Restaurant</span><span>Airport Transfer</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Direct beachfront access with white sand views. Resort-style amenities with daily housekeeping and concierge services included.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<!-- LONG-TERM LISTINGS -->
+<div class="listing-card" data-type="longterm">
+<div class="listing-img">
+<span>BGC 2BR Condo</span>
+<span class="badge longterm">Long-Term</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱65,000 <span>/ month</span></div>
+<h3 class="listing-title">2-Bedroom Condo in Uptown Bonifacio</h3>
+<div class="listing-meta">
+<span>🛏️ 2 BR</span>
+<span>🚿 2 Bath</span>
+<span>📐 72 sqm</span>
+</div>
+<div class="listing-features">
+<span>Parking</span><span>Pool</span><span>Gym</span><span>24/7 Security</span><span>Balcony</span><span>Furnished</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Modern 2-bedroom unit in Uptown Bonifacio. Fully furnished with premium appliances. Minimum 6-month lease. Pet-friendly building.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="longterm">
+<div class="listing-img">
+<span>Makati 3BR House</span>
+<span class="badge longterm">Long-Term</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱95,000 <span>/ month</span></div>
+<h3 class="listing-title">3-Bedroom Townhouse in Magallanes Village</h3>
+<div class="listing-meta">
+<span>🛏️ 3 BR</span>
+<span>🚿 3 Bath</span>
+<span>📐 150 sqm</span>
+</div>
+<div class="listing-features">
+<span>Garage</span><span>Garden</span><span>Maids Quarters</span><span>Gated</span><span>Near School</span><span>Pet Friendly</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Spacious townhouse in exclusive gated village. Ideal for families. Close to international schools, malls, and major thoroughfares. 12-month lease preferred.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="longterm">
+<div class="listing-img">
+<span>Baguio Cabin</span>
+<span class="badge longterm">Long-Term</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱38,000 <span>/ month</span></div>
+<h3 class="listing-title">Cozy Cabin in Camp John Hay</h3>
+<div class="listing-meta">
+<span>🛏️ 2 BR</span>
+<span>🚿 1 Bath</span>
+<span>📐 85 sqm</span>
+</div>
+<div class="listing-features">
+<span>Fireplace</span><span>Garden</span><span>Parking</span><span>Mountain View</span><span>Furnished</span><span>Quiet Zone</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Charming pine cabin with mountain views. Perfect for remote workers and retirees seeking cool climate living. Minimum 3-month lease.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="longterm">
+<div class="listing-img">
+<span>Quezon City Office</span>
+<span class="badge longterm">Long-Term</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱55,000 <span>/ month</span></div>
+<h3 class="listing-title">Commercial Space in Eastwood City</h3>
+<div class="listing-meta">
+<span>🏢 Office</span>
+<span>📐 45 sqm</span>
+<span>🅿️ 1 Slot</span>
+</div>
+<div class="listing-features">
+<span>24/7 Access</span><span>Security</span><span>Central AC</span><span>Elevator</span><span>Near BPO</span><span>PEZA Zone</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Prime office space in BPO hub. PEZA-registered building. Ideal for startups, BPOs, and professional services. 12-month lease with renewal option.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="longterm">
+<div class="listing-img">
+<span>Marikina Duplex</span>
+<span class="badge longterm">Long-Term</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱28,000 <span>/ month</span></div>
+<h3 class="listing-title">Duplex Unit in Marikina Heights</h3>
+<div class="listing-meta">
+<span>🛏️ 3 BR</span>
+<span>🚿 2 Bath</span>
+<span>📐 110 sqm</span>
+</div>
+<div class="listing-features">
+<span>Garage</span><span>Balcony</span><span>Near MRT</span><span>Gated</span><span>Family Friendly</span><span>Long-Term OK</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Affordable family home in flood-free Marikina Heights. Near LRT-2 and major roads. Unfurnished with option to furnish. Flexible lease terms.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+<div class="listing-card" data-type="transient">
+<div class="listing-img">
+<span>Siargao Surf Villa</span>
+<span class="badge transient">Transient</span>
+</div>
+<div class="listing-body">
+<div class="listing-price">₱9,500 <span>/ night</span></div>
+<h3 class="listing-title">Surf Villa in General Luna, Siargao</h3>
+<div class="listing-meta">
+<span>👤 6 Guests</span>
+<span>🛏️ 2 BR</span>
+<span>📐 120 sqm</span>
+</div>
+<div class="listing-features">
+<span>Beach Access</span><span>Surfboard</span><span>Pool</span><span>Outdoor Kitchen</span><span>Scooter</span><span>Island Tour</span>
+</div>
+<p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Tropical villa steps from Cloud 9 surf break. Includes surfboard rental, island hopping coordination, and daily breakfast. Minimum 2-night stay.</p>
+<a href="contact.html" class="btn btn-dark">Inquire Now</a>
+</div>
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 3rem;">
+<p style="color: var(--text-light); margin-bottom: 1rem;">Don't see what you're looking for? We manage properties across the Philippines.</p>
+<a href="contact.html" class="btn btn-primary">Request a Custom Search</a>
+</div>
+</div>
+</section>
+
+<section class="cta-section">
+<div class="container">
+<h2>Own a Property? Let Us Manage It.</h2>
+<p>Join our portfolio of managed properties. We handle marketing, tenant screening, maintenance, and compliance — so you don't have to.</p>
+<div class="cta-buttons">
+<a href="contact.html" class="btn btn-primary">List Your Property</a>
+<a href="services.html" class="btn btn-outline-white">Learn About Management</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo-text">Gaia-Jan Long Properties</span>
+<p>Your Philippine Real Estate Partner. Always Here. Always Working. We steward your investment as if it were our own.</p>
+<div class="address">
+1206 Trade and Finance Tower<br>
+7th Avenue corner 32nd Street<br>
+Bonifacio Global City, Taguig 1634<br>
+Fourth District, NCR, Philippines
+</div>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<ul>
+<li><a href="services.html">Property Management</a></li>
+<li><a href="services.html">Property Disposition</a></li>
+<li><a href="services.html">Development</a></li>
+<li><a href="services.html">Joint Ventures</a></li>
+<li><a href="properties.html">Property Listings</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<ul>
+<li><a href="about.html">About Us</a></li>
+<li><a href="about.html#leadership">Leadership</a></li>
+<li><a href="about.html#compliance">Compliance</a></li>
+<li><a href="blog.html">Insights</a></li>
+<li><a href="contact.html">Careers</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<ul>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Service</a></li>
+<li><a href="#">AML/KYC Policy</a></li>
+<li><a href="#">Data Privacy Notice</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Gaia-Jan Long Properties, Inc. An SPV of ClaMor Leisure Group – Golden Dragon Group JV. All rights reserved.</p>
+<div class="footer-legal">
+<a href="#">SEC Registered</a>
+<a href="#">AMLC Compliant</a>
+<a href="#">DHSUD Accredited</a>
+<a href="#">RA 10173 Compliant</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
+window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    nav.style.boxShadow = window.scrollY > 50 ? '0 2px 10px rgba(0,0,0,0.1)' : 'none';
+});
+function filterListings(type) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.listing-card').forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.listing-card').forEach(el => {
+    el.classList.add('fade-in'); observer.observe(el);
+});
+</script>
+</body></html>
