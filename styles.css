@@ -8,147 +8,290 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
-    color: #2c3e2f;
+    background: #f5f2e8;  /* soft warm cream – easy on eyes */
+    color: #1e3a2f;       /* deep moss green for text */
 }
+
 header {
-    background: #2c5f2d;
-    color: white;
+    background: #1a3b2e;  /* dark bottle green */
+    color: #f4c542;       /* gold */
     padding: 1rem 0 2rem 0;
     text-align: center;
+    border-bottom: 4px solid #f4c542;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.8rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
 }
+
 nav a {
-    color: white;
+    color: #f4c542;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
+
 nav a:hover {
+    color: #ffdc7a;
     text-decoration: underline;
 }
+
 h1 {
     font-size: 2.5rem;
     margin: 0.5rem 0;
+    letter-spacing: 1px;
 }
+
 main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
+
+/* Homepage hero */
 .hero {
-    background: #e9f5e9;
+    background: #e9eed9;  /* light moss */
     padding: 2rem;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 16px;
     margin-bottom: 2rem;
+    border-left: 6px solid #f4c542;
 }
+
 .btn {
     display: inline-block;
     background: #2c5f2d;
-    color: white;
-    padding: 0.75rem 1.5rem;
+    color: #f4c542;
+    padding: 0.75rem 1.8rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 40px;
     margin-top: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid #f4c542;
 }
+
+.btn:hover {
+    background: #f4c542;
+    color: #1a3b2e;
+    border-color: #1a3b2e;
+}
+
+/* Features on homepage */
 .features {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .feature {
     background: white;
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
     text-align: center;
+    border-top: 5px solid #f4c542;
 }
+
+/* Services page – comparison section */
+.comparison {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.comparison h2 {
+    color: #1a3b2e;
+    border-left: 6px solid #f4c542;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comparison-card {
+    flex: 1;
+    min-width: 260px;
+    background: #faf9f4;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.comparison-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.gaia-card {
+    border: 2px solid #2c5f2d;
+    background: #eef5e6;
+}
+
+.competitor-card {
+    border: 1px solid #ccc;
+    background: #fefefe;
+}
+
+.comparison-card ul {
+    text-align: left;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.comparison-card li {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.gaia-card li::before {
+    content: "✓";
+    color: #f4c542;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.competitor-card li::before {
+    content: "✗";
+    color: #b34e4e;
+    position: absolute;
+    left: 0;
+}
+
+.competitor-card li {
+    color: #6b6b6b;
+}
+
+/* Property cards */
 .property-list {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
+
 .property-card {
     background: white;
     padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     flex: 1;
     min-width: 250px;
+    border-bottom: 4px solid #f4c542;
 }
+
 .price {
     font-weight: bold;
-    color: #2c5f2d;
+    color: #c98a1a;
     display: block;
     margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
+
+/* Services list (original) */
 .services-list {
     background: white;
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 20px;
     list-style: none;
+    margin: 1.5rem 0;
 }
+
 .services-list li {
     margin: 0.75rem 0;
+    font-size: 1.05rem;
 }
+
+/* Contact form */
 form {
     background: white;
     padding: 2rem;
-    border-radius: 12px;
-    max-width: 600px;
+    border-radius: 24px;
+    max-width: 650px;
     margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
-label, input, textarea, button {
-    display: block;
-    width: 100%;
-    margin-top: 0.5rem;
+
+label {
+    font-weight: 600;
+    margin-top: 1rem;
 }
+
 input, textarea {
     padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 0.3rem;
 }
+
 button {
-    background: #2c5f2d;
-    color: white;
+    background: #1a3b2e;
+    color: #f4c542;
     border: none;
-    padding: 0.75rem;
-    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 40px;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    width: auto;
+    transition: 0.3s;
 }
-footer {
-    text-align: center;
-    background: #2c3e2f;
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
+
+button:hover {
+    background: #f4c542;
+    color: #1a3b2e;
 }
+
+/* Blog articles */
 article {
     background: white;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    border-radius: 12px;
+    border-radius: 20px;
+    border-left: 5px solid #f4c542;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1a3b2e;
+    color: #e5d3a3;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.6rem;
     }
-    .features, .property-list {
+    .features, .property-list, .comparison-grid {
         flex-direction: column;
+    }
+    .comparison-card {
+        margin-bottom: 1rem;
     }
 }
