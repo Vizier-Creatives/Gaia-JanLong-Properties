@@ -1,8 +1,8 @@
-🌿 Gaia Properties – Sustainable Real Estate Website
+🌿 Gaia-Jan Long Properties – Sustainable Real Estate Website
 
 **Live Site:** [https://vizier-creatives.github.io/Gaia-Properties/](https://vizier-creatives.github.io/Gaia-Properties/)
 
-Gaia Properties is a multi‑page, fully responsive website designed to showcase eco‑friendly real estate listings, company services, and a blog. The site emphasizes clean design, green aesthetics, and accessibility.
+Gaia-Jan Long Properties is a multi‑page, fully responsive website designed to showcase eco‑friendly real estate listings, company services, and a blog. The site emphasizes clean design, green aesthetics, and accessibility.
 
 ---
 
@@ -10,7 +10,7 @@ Gaia Properties is a multi‑page, fully responsive website designed to showcase
 
 ```
 
-Gaia-Properties/
+Gaia-Jan Long Properties/
 ├── index.html        # Homepage with hero section and feature highlights
 ├── properties.html   # Listing of sample sustainable properties
 ├── services.html     # Services offered (sales, rental, green consulting)
@@ -32,7 +32,7 @@ Visit: [https://vizier-creatives.github.io/Gaia-Properties/](https://vizier-crea
 ### Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vizier-creatives/Gaia-Properties.git
+   git clone https://github.com/vizier-creatives/Gaia-Jan Long Properties.git
 ```
 
 1. Open index.html in any modern browser.
