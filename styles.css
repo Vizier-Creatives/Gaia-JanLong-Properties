@@ -10,45 +10,46 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: #f5f2e8;  /* soft warm cream – easy on eyes */
-    color: #1e3a2f;       /* deep moss green for text */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #fef8e7;   /* warm sand */
+    color: #1f3b2c;        /* deep jungle green */
+    line-height: 1.5;
 }
 
 header {
-    background: #1a3b2e;  /* dark bottle green */
-    color: #f4c542;       /* gold */
-    padding: 1rem 0 2rem 0;
+    background: linear-gradient(135deg, #1a3b2e 0%, #2a5a44 100%);
+    color: #f0d88a;
     text-align: center;
-    border-bottom: 4px solid #f4c542;
+    padding: 1.5rem 1rem 2rem;
+    border-bottom: 5px solid #e9c46a;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.8rem;
-    margin-bottom: 1rem;
+    list-style: none;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 nav a {
-    color: #f4c542;
+    color: #f0d88a;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    color: #ffdc7a;
+    color: #ffedb0;
     text-decoration: underline;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin: 0.5rem 0;
     letter-spacing: 1px;
+    margin-bottom: 0.4rem;
 }
 
 main {
@@ -57,31 +58,36 @@ main {
     padding: 0 1.5rem;
 }
 
-/* Homepage hero */
+/* Hero section */
 .hero {
-    background: #e9eed9;  /* light moss */
+    background: #e0f0e5;
     padding: 2rem;
+    border-radius: 2rem;
     text-align: center;
-    border-radius: 16px;
-    margin-bottom: 2rem;
-    border-left: 6px solid #f4c542;
+    margin-bottom: 2.5rem;
+    border-left: 8px solid #e9c46a;
+}
+
+.hero h2 {
+    font-size: 1.9rem;
+    color: #1a3b2e;
 }
 
 .btn {
     display: inline-block;
-    background: #2c5f2d;
-    color: #f4c542;
-    padding: 0.75rem 1.8rem;
-    text-decoration: none;
+    background: #2a5a44;
+    color: #e9c46a;
+    padding: 0.7rem 1.8rem;
     border-radius: 40px;
-    margin-top: 1rem;
+    text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-    border: 1px solid #f4c542;
+    margin-top: 1rem;
+    border: 1px solid #e9c46a;
+    transition: 0.2s;
 }
 
 .btn:hover {
-    background: #f4c542;
+    background: #e9c46a;
     color: #1a3b2e;
     border-color: #1a3b2e;
 }
@@ -89,7 +95,7 @@ main {
 /* Features on homepage */
 .features {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -97,28 +103,75 @@ main {
 .feature {
     background: white;
     padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    border-radius: 1.8rem;
     flex: 1;
     min-width: 220px;
     text-align: center;
-    border-top: 5px solid #f4c542;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-top: 4px solid #e9c46a;
+    transition: transform 0.2s;
 }
 
-/* Services page – comparison section */
+.feature:hover {
+    transform: translateY(-4px);
+}
+
+/* Property cards */
+.property-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1.8rem;
+    flex: 1;
+    min-width: 260px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #e9c46a;
+}
+
+.price {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #c47a2a;
+    font-size: 1.2rem;
+}
+
+/* Services page list */
+.services-list {
+    background: white;
+    padding: 2rem;
+    border-radius: 1.8rem;
+    list-style: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.services-list li {
+    margin: 0.9rem 0;
+    font-size: 1.05rem;
+}
+
+/* Comparison section – no large gaps, clear layout */
 .comparison {
     background: white;
-    border-radius: 24px;
+    border-radius: 2rem;
     padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .comparison h2 {
-    color: #1a3b2e;
-    border-left: 6px solid #f4c542;
+    font-size: 1.8rem;
+    border-left: 6px solid #e9c46a;
     padding-left: 1rem;
     margin-bottom: 1.5rem;
+    color: #1a3b2e;
 }
 
 .comparison-grid {
@@ -131,136 +184,102 @@ main {
 .comparison-card {
     flex: 1;
     min-width: 260px;
-    background: #faf9f4;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     padding: 1.5rem;
-    text-align: center;
-    transition: 0.2s;
-}
-
-.comparison-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
 }
 
 .gaia-card {
-    border: 2px solid #2c5f2d;
-    background: #eef5e6;
+    background: #eef5e8;
+    border: 2px solid #2a5a44;
 }
 
 .competitor-card {
-    border: 1px solid #ccc;
-    background: #fefefe;
+    background: #fef9e6;
+    border: 1px solid #e2d8b0;
+}
+
+.comparison-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .comparison-card ul {
-    text-align: left;
-    margin-top: 1rem;
     list-style: none;
+    text-align: left;
 }
 
 .comparison-card li {
-    margin: 0.75rem 0;
-    padding-left: 1.5rem;
+    margin: 0.8rem 0;
+    padding-left: 1.6rem;
     position: relative;
 }
 
 .gaia-card li::before {
-    content: "✓";
-    color: #f4c542;
-    font-weight: bold;
+    content: "🌿";
     position: absolute;
     left: 0;
+    color: #2a5a44;
 }
 
 .competitor-card li::before {
     content: "✗";
-    color: #b34e4e;
     position: absolute;
     left: 0;
+    color: #c47a2a;
 }
 
 .competitor-card li {
-    color: #6b6b6b;
+    color: #6b5a3a;
 }
 
-/* Property cards */
-.property-list {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.property-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    flex: 1;
-    min-width: 250px;
-    border-bottom: 4px solid #f4c542;
-}
-
-.price {
-    font-weight: bold;
-    color: #c98a1a;
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-}
-
-/* Services list (original) */
-.services-list {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    list-style: none;
-    margin: 1.5rem 0;
-}
-
-.services-list li {
-    margin: 0.75rem 0;
-    font-size: 1.05rem;
+.comparison-note {
+    text-align: center;
+    margin-top: 1.8rem;
+    font-style: italic;
+    color: #2a5a44;
+    font-weight: 500;
 }
 
 /* Contact form */
 form {
     background: white;
     padding: 2rem;
-    border-radius: 24px;
-    max-width: 650px;
+    border-radius: 2rem;
+    max-width: 700px;
     margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
 }
 
 label {
+    display: block;
     font-weight: 600;
-    margin-top: 1rem;
+    margin: 1rem 0 0.3rem 0;
 }
 
 input, textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 12px;
     width: 100%;
-    margin-top: 0.3rem;
+    padding: 0.7rem;
+    border: 1px solid #ddd3b0;
+    border-radius: 1rem;
+    background: #fffef7;
+    margin-bottom: 0.5rem;
 }
 
 button {
-    background: #1a3b2e;
-    color: #f4c542;
+    background: #2a5a44;
+    color: #e9c46a;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.8rem;
     border-radius: 40px;
-    cursor: pointer;
-    margin-top: 1.5rem;
     font-weight: bold;
-    width: auto;
-    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 0.8rem;
 }
 
 button:hover {
-    background: #f4c542;
+    background: #e9c46a;
     color: #1a3b2e;
 }
 
@@ -268,30 +287,50 @@ button:hover {
 article {
     background: white;
     padding: 1.5rem;
+    border-radius: 1.5rem;
     margin-bottom: 1.5rem;
-    border-radius: 20px;
-    border-left: 5px solid #f4c542;
+    border-left: 5px solid #e9c46a;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+article h2 {
+    margin-bottom: 0.4rem;
+    color: #1a3b2e;
+}
+
+/* About page */
+.about-text {
+    background: white;
+    padding: 2rem;
+    border-radius: 1.8rem;
+    line-height: 1.7;
 }
 
 /* Footer */
 footer {
-    text-align: center;
     background: #1a3b2e;
-    color: #e5d3a3;
+    color: #e3d2a5;
+    text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     nav ul {
-        flex-direction: column;
-        gap: 0.6rem;
+        gap: 0.9rem;
     }
-    .features, .property-list, .comparison-grid {
+    .comparison-grid {
         flex-direction: column;
     }
-    .comparison-card {
-        margin-bottom: 1rem;
+    .feature, .property-card {
+        min-width: auto;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
     }
 }
